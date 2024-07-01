@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.767" height="17.767" viewBox="0 0 17.767 17.767">
+  <g id="save" transform="translate(-172 -188)">
+    <g id="frame" transform="translate(172 188)">
+      <path id="Vector" d="M0,0A5.922,5.922,0,0,0,4.072,0" transform="translate(6.848 6.699)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Vector-2" data-name="Vector" d="M9.994,0H2.857A2.864,2.864,0,0,0,0,2.857v10.43c0,1.332.955,1.9,2.125,1.251l3.613-2.006a1.568,1.568,0,0,1,1.384,0l3.613,2.006c1.17.651,2.125.089,2.125-1.251V2.857A2.875,2.875,0,0,0,9.994,0Z" transform="translate(2.458 1.481)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Vector-3" data-name="Vector" d="M9.994,0H2.857A2.864,2.864,0,0,0,0,2.857v10.43c0,1.332.955,1.9,2.125,1.251l3.613-2.006a1.568,1.568,0,0,1,1.384,0l3.613,2.006c1.17.651,2.125.089,2.125-1.251V2.857A2.875,2.875,0,0,0,9.994,0Z" transform="translate(2.458 1.481)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H17.767V17.767H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg id="tick-circle" xmlns="http://www.w3.org/2000/svg" width="21.538" height="21.504" viewBox="0 0 21.538 21.504">
+  <path id="Vector" d="M8.974,17.92A8.96,8.96,0,1,0,0,8.96,8.993,8.993,0,0,0,8.974,17.92Z" transform="translate(1.795 1.792)" fill="none" stroke="#15cc82" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  <path id="Vector-2" data-name="Vector" d="M0,2.536,2.54,5.071,7.628,0" transform="translate(6.955 8.216)" fill="none" stroke="#15cc82" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H21.538V21.5H0Z" fill="none" opacity="0"/>
+</svg>
