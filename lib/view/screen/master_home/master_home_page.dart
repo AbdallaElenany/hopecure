@@ -1,159 +1,96 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/color.dart';
-import '../../../core/shared_widget/button/custom_button_icon.dart';
-import '../../../data/data source/static/data_bottom_nav_bar.dart';
+import '../../../../core/constant/color.dart';
+import '../../../controller/master_home/bottom_navigation_bar.dart';
 
-class MasterHomePage extends StatefulWidget {
+class MasterHomePage extends StatelessWidget {
   const MasterHomePage({super.key});
 
   @override
-  State<MasterHomePage> createState() => _MasterHomePageState();
-}
-
-class _MasterHomePageState extends State<MasterHomePage> {
-  late PageController pageController;
-  int currentPage = 0;
-
-  bottomTapped(int index) {
-    setState(() {
-      currentPage = index;
-      pageController.animateToPage(
-        index,
-        duration: const Duration(milliseconds: 300),
-        curve: Curves.linear,
-      );
-    });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    pageController = PageController(
-      initialPage: 0,
-      keepPage: true,
-    );
-  }
-
-  @override
-  void dispose() {
-    pageController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColor.white,
-      body: Stack(
-        children: [
-          PageView(
-            controller: pageController,
-            physics: const NeverScrollableScrollPhysics(),
-            children: const <Widget>[],
-          ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            left: 0,
-            child: Column(
-              children: [
-                currentPage == 3 || currentPage == 4
-                    ? const SizedBox.shrink()
-                    : InkWell(
-                        onTap: () {},
-                        child: Container(
-                          width: 120.w,
-                          padding: EdgeInsets.symmetric(
-                            vertical: 8.h,
-                          ),
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(30)),
-                            gradient: LinearGradient(
-                              colors: [
-                                AppColor.white,
-                                AppColor.white,
-                              ],
-                            ),
-                          ),
-                          child: Center(
-                            child: Text(
-                              'أضاف إعلانك',
-                              style: TextStyle(
-                                color: AppColor.black,
-                                fontSize: 14.sp,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                Container(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 5.h, horizontal: 20.w),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 15.h, horizontal: 20.w),
-                  decoration: const BoxDecoration(
-                    color: AppColor.white,
-                    borderRadius: BorderRadius.all(Radius.circular(30)),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppColor.shadow,
-                        offset: Offset(0, 10),
-                        blurRadius: 30,
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: List.generate(
-                      bottomNavBarItem.length,
-                      (index) {
-                        final bottomIcon = bottomNavBarItem[index];
-                        return Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            CustomButtomIcon(
-                              image: bottomIcon.image,
-                              onTap: () {
-                                bottomTapped(index);
-                              },
-                              colorButton: AppColor.white,
-                              colorGradient: currentPage == index
-                                  ? const LinearGradient(
-                                      begin: Alignment.topCenter,
-                                      end: Alignment.bottomCenter,
-                                      colors: [
-                                        AppColor.white,
-                                        AppColor.white,
-                                      ],
-                                    )
-                                  : null,
-                              width: 38.w,
-                              height: 38.h,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 4.0.h),
-                              child: Text(
-                                bottomIcon.name,
-                                style: TextStyle(
-                                  color: currentPage == index
-                                      ? AppColor.black
-                                      : AppColor.white,
-                                  fontSize: 10.sp,
-                                ),
-                              ),
-                            )
-                          ],
-                        );
-                      },
-                    ),
-                  ),
+    Get.put(BottomNavigationBarControllerImp());
+    return GetBuilder<BottomNavigationBarControllerImp>(
+      builder: (controller) => Scaffold(
+        appBar: AppBar(
+          backgroundColor: AppColor.blue,
+          elevation: 0.0,
+        ),
+        body: controller.pages[controller.currentIndex],
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: FloatingActionButton(
+            backgroundColor: AppColor.green,
+            onPressed: () {},
+            child: const Icon(Icons.event_note_outlined)),
+        bottomNavigationBar: BottomAppBar(
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          color: AppColor.white,
+          shape: const CircularNotchedRectangle(),
+          notchMargin: 8,
+          child: Container(
+            margin:
+                EdgeInsets.only(left: 10.0.w, right: 10.0.w, bottom: 10.0.h),
+            decoration: const BoxDecoration(
+              color: AppColor.white,
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColor.shadow,
+                  offset: Offset(0, 10),
+                  blurRadius: 30,
                 ),
               ],
             ),
-          )
-        ],
+            child: BottomNavigationBar(
+              currentIndex: controller.currentIndex,
+              onTap: (index) {
+                if (index != 2) {
+                  controller.currentIndex = index;
+                  controller.update();
+                }
+              },
+              backgroundColor: Colors.transparent,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: AppColor.blue,
+              unselectedItemColor: AppColor.black,
+              selectedFontSize: 10,
+              unselectedFontSize: 10,
+              elevation: 0,
+              items: <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                    child: FaIcon(FontAwesomeIcons.house, size: 20),
+                  ),
+                  label: 'Home'.tr,
+                ),
+                BottomNavigationBarItem(
+                  icon: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                    child: FaIcon(FontAwesomeIcons.briefcase, size: 20),
+                  ),
+                  label: 'Category'.tr,
+                ),
+                const BottomNavigationBarItem(icon: SizedBox(), label: ""),
+                BottomNavigationBarItem(
+                  icon: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                    child: FaIcon(FontAwesomeIcons.message, size: 20),
+                  ),
+                  label: 'Ask Doctor'.tr,
+                ),
+                BottomNavigationBarItem(
+                  icon: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                    child: FaIcon(FontAwesomeIcons.user, size: 20),
+                  ),
+                  label: 'Account'.tr,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

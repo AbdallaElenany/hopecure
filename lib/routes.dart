@@ -8,7 +8,7 @@ import 'core/middleware/onbording_middleware.dart';
 List<GetPage<dynamic>>? routes = [
   GetPage(
     name: "/",
-    page: () => const Login(),
+    page: () => const MasterHomePage(),
     middlewares: [OnbordingMiddleware()],
   ),
   GetPage(
