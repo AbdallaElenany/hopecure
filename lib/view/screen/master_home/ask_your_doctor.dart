@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
 import '../../../controller/master_home/tap_bar_controller.dart';
 import '../../../core/constant/color.dart';
 import '../../../core/constant/image_app.dart';

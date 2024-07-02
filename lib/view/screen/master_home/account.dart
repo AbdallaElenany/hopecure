@@ -117,8 +117,8 @@ class Account extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image13,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -134,8 +134,8 @@ class Account extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -145,8 +145,8 @@ class Account extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image14,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -162,8 +162,8 @@ class Account extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -173,8 +173,8 @@ class Account extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image15,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -190,8 +190,8 @@ class Account extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -201,8 +201,8 @@ class Account extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image16,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -218,8 +218,8 @@ class Account extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -229,8 +229,8 @@ class Account extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image17,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -246,8 +246,8 @@ class Account extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 40.0.w,
-                      height: 40.0.h,
+                      width: 35.0.w,
+                      height: 35.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],

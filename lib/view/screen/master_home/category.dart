@@ -64,8 +64,8 @@ class Category extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image9,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -81,8 +81,8 @@ class Category extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -92,8 +92,8 @@ class Category extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image10,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -109,8 +109,8 @@ class Category extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],
@@ -120,8 +120,8 @@ class Category extends StatelessWidget {
                   children: [
                     Image.asset(
                       AppImageAsset.image11,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                     SizedBox(
@@ -137,8 +137,8 @@ class Category extends StatelessWidget {
                     const Spacer(),
                     Image.asset(
                       AppImageAsset.image12,
-                      width: 50.0.w,
-                      height: 50.0.h,
+                      width: 40.w,
+                      height: 40.0.h,
                       fit: BoxFit.contain,
                     ),
                   ],

@@ -123,7 +123,7 @@ class Login extends StatelessWidget {
                         colorText: AppColor.white,
                         colorButton: AppColor.blue,
                         onPressed: () {
-                          // controller.goToMasterHome();
+                          controller.goToMasterHome();
                         },
                       ),
                       SizedBox(
