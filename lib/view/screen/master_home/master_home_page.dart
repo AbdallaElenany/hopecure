@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import '../../../../core/constant/color.dart';
 import '../../../controller/master_home/bottom_navigation_bar.dart';
+import '../../widget/home/nav_drawer.dart';
 
 class MasterHomePage extends StatelessWidget {
   const MasterHomePage({super.key});
@@ -11,12 +12,13 @@ class MasterHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(BottomNavigationBarControllerImp());
+
     return GetBuilder<BottomNavigationBarControllerImp>(
       builder: (controller) => Scaffold(
-        appBar: AppBar(
-          backgroundColor: AppColor.blue,
-          elevation: 0.0,
-        ),
+        backgroundColor: Colors.white,
+        key: controller.scaffoldKey,
+        extendBody: true,
+        endDrawer: const NavDrawer(),
         body: controller.pages[controller.currentIndex],
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
@@ -25,7 +27,7 @@ class MasterHomePage extends StatelessWidget {
             child: const Icon(Icons.event_note_outlined)),
         bottomNavigationBar: BottomAppBar(
           clipBehavior: Clip.antiAliasWithSaveLayer,
-          color: AppColor.white,
+          color: Colors.transparent,
           shape: const CircularNotchedRectangle(),
           notchMargin: 8,
           child: Container(
@@ -34,13 +36,6 @@ class MasterHomePage extends StatelessWidget {
             decoration: const BoxDecoration(
               color: AppColor.white,
               borderRadius: BorderRadius.all(Radius.circular(20)),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColor.shadow,
-                  offset: Offset(0, 10),
-                  blurRadius: 30,
-                ),
-              ],
             ),
             child: BottomNavigationBar(
               currentIndex: controller.currentIndex,

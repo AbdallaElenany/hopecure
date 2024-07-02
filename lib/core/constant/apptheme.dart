@@ -3,7 +3,7 @@ import 'color.dart';
 
 ThemeData themeArabic = ThemeData(
   useMaterial3: false,
-  fontFamily: "Alexandria",
+  fontFamily: "Cairo",
   textTheme: const TextTheme(
     displayLarge: TextStyle(height: 1.4, fontSize: 25, color: AppColor.black),
     ///////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@ ThemeData themeArabic = ThemeData(
 );
 ThemeData themeEnglish = ThemeData(
   useMaterial3: false,
-  fontFamily: "Alexandria",
+  fontFamily: "Cairo",
   textTheme: const TextTheme(
     displayLarge: TextStyle(height: 1.4, fontSize: 25, color: AppColor.black),
     ///////////////////////////////////////////////////////////////

@@ -19,6 +19,7 @@ class AppImageAsset {
   static const String linearLocation = "$rootIcons/linear_location.svg";
   static const String vectorBottom = "$rootIcons/vector_bottom.svg";
   static const String back = "$rootIcons/back_buttom.png";
+  static const String back2 = "$rootIcons/back_button2.png";
   static const String vectorBackBlack = "$rootIcons/vector_back_black.svg";
   static const String vectorBackWhite = "$rootIcons/vector_back_white.svg";
   static const String linearArrowLeft = "$rootIcons/linear_arrow_left.svg";
@@ -40,9 +41,6 @@ class AppImageAsset {
   static const String services = "$rootIcons/services.svg";
   //////////////////////////////////////////////////////////////////////////////
   static const String person = "$rootImages/person.png";
-  static const String person2 = "$rootImages/person2.png";
-  static const String person3 = "$rootImages/person3.png";
-  static const String person4 = "$rootImages/person4.png";
   static const String documentText = "$rootIcons/document_text.svg";
   static const String emptyWallet = "$rootIcons/empty_wallet.svg";
   static const String linearFlash = "$rootIcons/linear_flash.svg";
@@ -53,7 +51,8 @@ class AppImageAsset {
   static const String star = "$rootIcons/star.svg";
   static const String logout = "$rootIcons/logout.svg";
   //////////////////////////////////////////////////////////////////////////////
-  static const String notification = "$rootImages/notification.png";
+  static const String drawerIcon = "$rootIcons/drawer_icon.PNG";
+  static const String notification2 = "$rootIcons/notification2.PNG";
   static const String flash = "$rootIcons/flash.svg";
   static const String building = "$rootIcons/building.svg";
   static const String consulting = "$rootIcons/consulting.svg";
@@ -79,4 +78,21 @@ class AppImageAsset {
   static const String send = "$rootIcons/send.svg";
   static const String location = "$rootIcons/location.svg";
   //////////////////////////////////////////////////////////////////////////////
+  static const String image1 = "$rootImages/image1.PNG";
+  static const String image2 = "$rootImages/image2.PNG";
+  static const String image3 = "$rootImages/image3.PNG";
+  static const String image4 = "$rootImages/image4.PNG";
+  static const String image5 = "$rootImages/image5.PNG";
+  static const String image6 = "$rootImages/image6.PNG";
+  static const String image7 = "$rootImages/image7.PNG";
+  static const String image8 = "$rootImages/image8.PNG";
+  static const String image9 = "$rootImages/image9.PNG";
+  static const String image10 = "$rootImages/image10.PNG";
+  static const String image11 = "$rootImages/image11.PNG";
+  static const String image12 = "$rootImages/image12.PNG";
+  static const String image13 = "$rootImages/image13.PNG";
+  static const String image14 = "$rootImages/image14.PNG";
+  static const String image15 = "$rootImages/image15.PNG";
+  static const String image16 = "$rootImages/image16.PNG";
+  static const String image17 = "$rootImages/image17.PNG";
 }

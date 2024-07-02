@@ -10,7 +10,7 @@ abstract class BottomNavigationBarController extends GetxController {}
 class BottomNavigationBarControllerImp extends BottomNavigationBarController {
   int currentIndex = 0;
   late List<Widget?> pages = [];
-
+  var scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   void onInit() {
     pages.add(const Home());
